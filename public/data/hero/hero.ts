@@ -1,8 +1,10 @@
+import { baseUrl } from "@/app/lib/enviorment";
+
 export const hero = {
   heading: "eStartup",
   text: "Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.",
   button: "Get Started",
-  image: "http://localhost:3000/images/hero-img.png",
+  image: `${baseUrl}/images/hero-img.png`,
   details: [
     { icon: "bi bi-easel", iconText: "Lorem Ipsum" },
     { icon: "bi bi-gem", iconText: "Sed ut perspiciatis" },
