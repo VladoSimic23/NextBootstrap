@@ -35,6 +35,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

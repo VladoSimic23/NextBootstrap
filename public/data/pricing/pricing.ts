@@ -1,0 +1,62 @@
+export const pricing = {
+  title: "Pricing",
+  heading: "Check Our Pricing",
+  plans: [
+    {
+      title: "Free Plan",
+      price: 0,
+      icon: "bi bi-box",
+      button: "Buy Now",
+      featured: false,
+      details: [
+        { text: "Aida dere", available: true },
+        { text: "Nec feugiat nisl", available: true },
+        { text: "Nulla at volutpat dola", available: true },
+        { text: "Pharetra massa", available: false },
+        { text: "Massa ultricies mi", available: false },
+      ],
+    },
+    {
+      title: "Starter Plan",
+      price: 19,
+      icon: "bi bi-send",
+      button: "Buy Now",
+      featured: true,
+      details: [
+        { text: "Aida dere", available: true },
+        { text: "Nec feugiat nisl", available: true },
+        { text: "Nulla at volutpat dola", available: true },
+        { text: "Pharetra massa", available: true },
+        { text: "Massa ultricies mi", available: false },
+      ],
+    },
+    {
+      title: "Business Plan",
+      price: 29,
+      icon: "bi bi-airplane",
+      button: "Buy Now",
+      featured: false,
+      details: [
+        { text: "Aida dere", available: true },
+        { text: "Nec feugiat nisl", available: true },
+        { text: "Nulla at volutpat dola", available: true },
+        { text: "Pharetra massa", available: true },
+        { text: "Massa ultricies mi", available: true },
+      ],
+    },
+    {
+      title: "Ultimate Plan",
+      price: 49,
+      icon: "bi bi-rocket",
+      button: "Buy Now",
+      featured: false,
+      details: [
+        { text: "Aida dere", available: true },
+        { text: "Nec feugiat nisl", available: true },
+        { text: "Nulla at volutpat dola", available: true },
+        { text: "Pharetra massa", available: true },
+        { text: "Massa ultricies mi", available: true },
+      ],
+    },
+  ],
+};

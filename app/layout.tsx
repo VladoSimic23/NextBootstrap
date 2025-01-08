@@ -1,6 +1,15 @@
+import dns from "node:dns";
+dns.setDefaultResultOrder("ipv4first");
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+//import "./css/project.module.css";
+import BootstrapClient from "./lib/bootstrapClient";
+import Navbar from "./components/navbar/Navbar";
+import Hero from "./components/hero/Hero";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar />
+        <Suspense fallback={<h1>Loading Hero Section...</h1>}>
+          <Hero />
+        </Suspense>
         {children}
+        <BootstrapClient />
       </body>
     </html>
   );
