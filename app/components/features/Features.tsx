@@ -24,7 +24,7 @@ const Features = () => {
           <h2>{heading}</h2>
         </div>
         <div className="row gy-5 justify-content-between">
-          <div className="col-xl-5">
+          <div className={`col-xl-5 ${style.featuresImg}`}>
             <Image
               src={img}
               alt={alt}

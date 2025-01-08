@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div id="home" className={`${style.bgLightGreen} ${style.hero}`}>
       <div className="container">
-        <div className="row align-items-center">
+        <div className={`row align-items-center ${style.smallScreenHero}`}>
           <div className="col-lg-6">
             <h1>{heading}</h1>
             <p>{text}</p>

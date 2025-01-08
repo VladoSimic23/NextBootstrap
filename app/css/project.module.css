@@ -1,3 +1,9 @@
+.customCssWrap img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .activeItem {
   color: #71c55d !important;
   font-weight: bold !important;
@@ -278,7 +284,7 @@
 
 .question {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   color: black;
 }
 
@@ -289,4 +295,34 @@
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .question {
+    font-size: 16px;
+  }
+  .featuresImg {
+    margin-top: 0 !important;
+    text-align: center;
+  }
+  .servicesInner {
+    padding: 30px;
+  }
+  .features, .whoWeAre, .services, .hero, .questions, .pricing {
+    padding: 60px 0;
+  }
+  .btnCustom {
+    font-size: 14px;
+    padding: 10px 34px;
+  }
+  .boxContent {
+    padding: 30px;
+  }
+  .smallScreenHero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .smallScreenHero h1 {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=project.module.css.map */

@@ -3,6 +3,12 @@ $Green : #71c55d;
 $lightGrey : #8e9292;
 $veryLightGreen: #e4f1e2;
 
+.customCssWrap {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
 .activeItem  {
     color: $Green !important;
     font-weight: bold !important;
@@ -30,7 +36,7 @@ $veryLightGreen: #e4f1e2;
 }
 ///// HERO
 /// 
-///  
+////  
 .hero {
     //height: 100vh;
     padding-top: 100px;
@@ -300,7 +306,7 @@ $veryLightGreen: #e4f1e2;
 }
 .question {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: black;
 }
 .questLeft {
@@ -311,13 +317,35 @@ $veryLightGreen: #e4f1e2;
         margin-bottom: 30px;
     }
 }
-.questAnswer {
-    // display: grid;
-    // grid-template-rows: 0fr;
-    // transition: 0.3s ease-in-out;
-    // visibility: hidden;
-    // opacity: 0;
-    // p {
-    //     overflow: hidden;
-    // }
+
+
+@media only screen and (max-width: 992px) {
+    .question {
+        font-size: 16px;
+    }
+    .featuresImg {
+        margin-top: 0 !important;
+        text-align: center;
+    }
+
+    .servicesInner {
+        padding: 30px;
+    }
+    .features, .whoWeAre,.services,.hero,.questions,.pricing {
+        padding: 60px 0;
+    }
+    .btnCustom {
+        font-size: 14px;
+        padding: 10px 34px;
+    }
+    .boxContent {
+        padding: 30px;
+    }
+    .smallScreenHero {
+        flex-direction: column-reverse;
+        text-align: center;
+        h1 {
+            font-size: 40px;
+        }
+    }
 }

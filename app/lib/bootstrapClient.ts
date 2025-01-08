@@ -1,7 +1,5 @@
 "use client";
-
 import { useEffect } from "react";
-//import Boots from 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 function BootstrapClient() {
   useEffect(() => {
