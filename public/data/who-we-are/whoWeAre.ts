@@ -19,15 +19,15 @@ export const whoWeAre = {
   ],
   images: [
     {
-      img: "http://localhost:3000/images/whoWeAre/about-company-1.jpg",
+      img: "/images/whoWeAre/about-company-1.jpg",
       alt: "who we are img1",
     },
     {
-      img: "http://localhost:3000/images/whoWeAre/about-company-2.jpg",
+      img: "/images/whoWeAre/about-company-2.jpg",
       alt: "who we are img2",
     },
     {
-      img: "http://localhost:3000/images/whoWeAre/about-company-3.jpg",
+      img: "/images/whoWeAre/about-company-3.jpg",
       alt: "who we are img3",
     },
   ],

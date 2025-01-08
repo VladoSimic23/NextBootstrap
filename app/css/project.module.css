@@ -1,6 +1,6 @@
 .activeItem {
-  color: #71c55d;
-  font-weight: bold;
+  color: #71c55d !important;
+  font-weight: bold !important;
 }
 
 .bgLightGreen {

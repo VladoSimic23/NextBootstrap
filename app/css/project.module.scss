@@ -4,8 +4,8 @@ $lightGrey : #8e9292;
 $veryLightGreen: #e4f1e2;
 
 .activeItem  {
-    color: $Green;
-    font-weight: bold;
+    color: $Green !important;
+    font-weight: bold !important;
 }
 
 .bgLightGreen {
