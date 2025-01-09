@@ -1,5 +1,4 @@
 import style from "../../css/project.module.css";
-//import Image from "next/image";
 import { whoWeAre } from "@/public/data/who-we-are/whoWeAre";
 import WhoCarousel from "./WhoCarousel";
 

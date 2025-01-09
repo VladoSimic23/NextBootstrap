@@ -5,8 +5,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import style from "./css/project.module.css";
 import BootstrapClient from "./lib/bootstrapClient";
 import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
+import Hero from "./components/hero/HeroParent";
 import { Suspense } from "react";
+import Footer from "./components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
           <Hero />
         </Suspense>
         {children}
+        <Footer />
         <BootstrapClient />
       </body>
     </html>

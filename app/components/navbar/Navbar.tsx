@@ -1,5 +1,6 @@
 "use client";
 
+import style from "../../css/project.module.css";
 import dynamic from "next/dynamic";
 const NavItems = dynamic(() => import("./NavItems"), {
   ssr: false,
@@ -9,7 +10,7 @@ const NavItems = dynamic(() => import("./NavItems"), {
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg"
+      className={`navbar navbar-expand-lg ${style.navWrap}`}
       style={{
         padding: "15px 0",
         position: "fixed",
@@ -19,8 +20,8 @@ const Navbar = () => {
       }}
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
-          eStartup
+        <a className={`navbar-brand ${style.navLogo}`} href="#">
+          <span>e</span>Startup
         </a>
         <NavItems />
       </div>

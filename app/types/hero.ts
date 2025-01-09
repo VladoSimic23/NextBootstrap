@@ -4,9 +4,11 @@ export interface HeroI {
     text: string;
     button: string;
     image: string;
-    details: Array<{
-      icon: string;
-      iconText: string;
-    }>;
+    details: HeroDetailsI[];
   };
+}
+
+export interface HeroDetailsI {
+  icon: string;
+  iconText: string;
 }
